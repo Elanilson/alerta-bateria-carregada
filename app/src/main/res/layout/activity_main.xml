@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/AzulCinza500"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/layoutBateria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageViewTopBateria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="-11.0dip"
+                    app:srcCompat="@drawable/battery_line_top_vermelho_xml" />
+
+                <ImageView
+                    android:id="@+id/imageViewBateria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/battery_vermelho" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/layoutBateria"
+                android:layout_alignRight="@id/layoutBateria"
+                android:layout_alignBottom="@id/layoutBateria"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/bateria100"
+                    android:layout_width="match_parent"
+                    android:layout_height="14.0dip"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/barra_black" />
+
+                <ImageButton
+                    android:id="@+id/bateria90"
+                    android:layout_width="match_parent"
+                    android:layout_height="14.0dip"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/barra_black" />
+
+                <ImageButton
+                    android:id="@+id/bateria80"
+                    android:layout_width="match_parent"
+                    android:layout_height="14.0dip"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/barra_black" />
+
+                <ImageButton
+                    android:id="@+id/bateria70"
+                    android:layout_width="match_parent"
+                    android:layout_height="14.0dip"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/barra_black" />
+
+                <ImageButton
+                    android:id="@+id/bateria60"
+                    android:layout_width="match_parent"
+                    android:layout_height="14.0dip"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/barra_black" />
+
+                <ImageButton
+                    android:id="@+id/bateria50"
+                    android:layout_width="match_parent"
+                    android:layout_height="14.0dip"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/barra_black" />
+
+                <ImageButton
+                    android:id="@+id/bateria40"
+                    android:layout_width="match_parent"
+                    android:layout_height="14.0dip"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/barra_black" />
+
+                <ImageButton
+                    android:id="@+id/bateria30"
+                    android:layout_width="match_parent"
+                    android:layout_height="14.0dip"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/barra_black" />
+
+                <ImageButton
+                    android:id="@+id/bateria20"
+                    android:layout_width="match_parent"
+                    android:layout_height="14.0dip"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/barra_black" />
+
+                <ImageButton
+                    android:id="@+id/bateria10"
+                    android:layout_width="match_parent"
+                    android:layout_height="14.0dip"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="11dp"
+                    android:background="@drawable/barra_black" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="0%"
+        android:textColor="@color/AzulCinza100"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/status"
+                    android:textColor="@color/AzulCinza100" />
+
+                <TextView
+                    android:id="@+id/textViewStatusBateria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:textColor="@color/verde" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/temperatura"
+                    android:textColor="@color/AzulCinza100" />
+
+                <TextView
+                    android:id="@+id/textViewTemperaturaBateria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:textColor="@color/verde" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tensao"
+                    android:textColor="@color/AzulCinza100" />
+
+                <TextView
+                    android:id="@+id/textViewTensaoBateria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:textColor="@color/verde" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/saude"
+                    android:textColor="@color/AzulCinza100" />
+
+                <TextView
+                    android:id="@+id/textViewSaudeBateria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="TextView"
+                    android:textColor="@color/verde" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="notificar"
+        android:text="Enviar" />
+
+    <Button
+        android:id="@+id/buttonTeste1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="teste1"
+        android:text="ButtonTeste1" />
+
+    <Button
+        android:id="@+id/buttonTeste2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="teste2"
+        android:text="ButtonTeste2" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="paraVibrar"
+        android:text="parar vibracao" />
+
+</LinearLayout>

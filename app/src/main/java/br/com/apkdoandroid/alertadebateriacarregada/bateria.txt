@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mainLayout" android:background="@color/colorxml_color_39" android:layout_width="fill_parent" android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/adb_layout" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="3.0dip">
+        <FrameLayout android:id="@id/ad_view_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/contentsViewer3" android:layout_below="@id/adb_layout">
+        <RelativeLayout android:id="@id/contentsViewer2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:orientation="vertical" android:id="@id/batteryhomelayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:gravity="center" android:id="@id/batteryLinearlayout" android:layout_width="fill_parent" android:layout_height="240.0dip">
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:id="@id/linearLayout10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView android:id="@id/imageView7" android:background="@drawable/battery_line_white_xml" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <ImageView android:id="@id/imageView8" android:background="@drawable/battery_line_white_plus_xml" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-10.0dip" android:layout_marginTop="35.0dip" />
+                        <TextView android:textSize="35.0sp" android:textStyle="bold" android:textColor="#ffeddd30" android:layout_gravity="center_vertical" android:id="@id/ratioTxt2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginBottom="2.0dip" android:text="100%" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center"
+                        android:orientation="horizontal"
+                        android:id="@id/gaugeLinearLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/gauge_layout_margin_left"
+                        android:layout_marginTop="16.0dip"
+                        android:layout_alignTop="@id/linearLayout10">
+                        <Button android:id="@id/bar1" android:background="@drawable/battery_line_garo_gauge_yellow_xml" android:layout_width="14.0dip" android:layout_height="80.0dip" />
+                        <Button android:id="@id/bar2" android:background="@drawable/battery_line_garo_gauge_yellow_xml" android:layout_width="14.0dip" android:layout_height="80.0dip" android:layout_marginLeft="3.0dip" />
+                        <Button android:id="@id/bar3" android:background="@drawable/battery_line_garo_gauge_yellow_xml" android:layout_width="14.0dip" android:layout_height="80.0dip" android:layout_marginLeft="3.0dip" />
+                        <Button android:id="@id/bar4" android:background="@drawable/battery_line_garo_gauge_yellow_xml" android:layout_width="14.0dip" android:layout_height="80.0dip" android:layout_marginLeft="3.0dip" />
+                        <Button android:id="@id/bar5" android:background="@drawable/battery_line_garo_gauge_yellow_xml" android:layout_width="14.0dip" android:layout_height="80.0dip" android:layout_marginLeft="3.0dip" />
+                        <Button android:id="@id/bar6" android:background="@drawable/battery_line_garo_gauge_yellow_xml" android:layout_width="14.0dip" android:layout_height="80.0dip" android:layout_marginLeft="3.0dip" />
+                        <Button android:id="@id/bar7" android:background="@drawable/battery_line_garo_gauge_yellow_xml" android:layout_width="14.0dip" android:layout_height="80.0dip" android:layout_marginLeft="3.0dip" />
+                        <Button android:id="@id/bar8" android:background="@drawable/battery_line_garo_gauge_yellow_xml" android:layout_width="14.0dip" android:layout_height="80.0dip" android:layout_marginLeft="3.0dip" />
+                        <Button android:id="@id/bar9" android:background="@drawable/battery_line_garo_gauge_yellow_xml" android:layout_width="14.0dip" android:layout_height="80.0dip" android:layout_marginLeft="3.0dip" />
+                        <Button android:id="@id/bar10" android:background="@drawable/battery_line_garo_gauge_yellow_xml" android:layout_width="14.0dip" android:layout_height="80.0dip" android:layout_marginLeft="3.0dip" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

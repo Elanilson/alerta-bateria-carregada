@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Alerta de bateria carregada</string>
+    <string name="status">Status:</string>
+    <string name="temperatura">Temperatura:</string>
+    <string name="tensao">Tensão:</string>
+    <string name="saude">Saúde:</string>
+    <string name="channel_id">avisos_bateria</string>
+    <string name="channel_name">channel_bateria</string>
+    <string name="channel_description">cahnnel_descricao_bateria</string>
+</resources>
